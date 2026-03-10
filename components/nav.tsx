@@ -42,7 +42,7 @@ export function Nav() {
             <img
               src="/logo-setupopenclaw.png"
               alt="SetupOpenClaw — Managed AI Assistant Deployment"
-              className={`h-8 sm:h-9 w-auto transition-all ${
+              className={`h-14 sm:h-16 w-auto transition-all ${
                 scrolled
                   ? "dark:brightness-0 dark:invert"
                   : "brightness-0 invert"
