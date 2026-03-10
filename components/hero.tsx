@@ -29,7 +29,7 @@ export function Hero() {
       {/* Grid overlay */}
       <div className="absolute inset-0 grid-overlay opacity-50" />
 
-      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20">
+      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left: Content */}
           <div className="animate-fade-in-up">
@@ -89,13 +89,13 @@ export function Hero() {
             </div>
 
             {/* Trust signals */}
-            <div className="flex items-center gap-6 mt-8 text-sm text-slate-400">
+            <div className="flex items-center gap-6 mt-8 text-sm text-white/70">
               <span className="flex items-center gap-1.5">
-                <Shield className="w-4 h-4 text-emerald-500" /> 100%
+                <Shield className="w-4 h-4 text-emerald-400" /> 100%
                 satisfaction guarantee
               </span>
               <span className="flex items-center gap-1.5">
-                <Clock className="w-4 h-4 text-emerald-500" /> Setup in
+                <Clock className="w-4 h-4 text-emerald-400" /> Setup in
                 hours, not weeks
               </span>
             </div>

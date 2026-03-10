@@ -1,17 +1,94 @@
 const platforms = [
-  { name: "Gmail", color: "#EA4335" },
-  { name: "Slack", color: "#4A154B" },
-  { name: "Notion", color: "#000000" },
-  { name: "Salesforce", color: "#00A1E0" },
-  { name: "GitHub", color: "#333333" },
-  { name: "Calendar", color: "#4285F4" },
-  { name: "Drive", color: "#0F9D58" },
-  { name: "Zoom", color: "#2D8CFF" },
-  { name: "HubSpot", color: "#FF7A59" },
-  { name: "Jira", color: "#0052CC" },
-  { name: "Linear", color: "#5E6AD2" },
-  { name: "Figma", color: "#F24E1E" },
-  { name: "Teams", color: "#6264A7" },
+  {
+    name: "Gmail",
+    color: "#EA4335",
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-6 h-6" fill="currentColor">
+        <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+      </svg>
+    ),
+  },
+  {
+    name: "Slack",
+    color: "#4A154B",
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-6 h-6" fill="currentColor">
+        <path d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zm1.271 0a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zm0 1.271a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zm10.122 2.521a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zm-1.268 0a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zm-2.523 10.122a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zm0-1.268a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z" />
+      </svg>
+    ),
+  },
+  {
+    name: "Notion",
+    color: "#000000",
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-6 h-6" fill="currentColor">
+        <path d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L17.86 1.968c-.42-.326-.981-.7-2.055-.607L3.01 2.295c-.466.046-.56.28-.374.466zm.793 3.08v13.904c0 .747.373 1.027 1.214.98l14.523-.84c.841-.046.935-.56.935-1.166V6.354c0-.606-.233-.933-.748-.886l-15.177.887c-.56.046-.747.326-.747.933zm14.337.745c.093.42 0 .84-.42.888l-.7.14v10.264c-.608.327-1.168.514-1.635.514-.748 0-.935-.234-1.495-.933l-4.577-7.186v6.952l1.448.327s0 .84-1.168.84l-3.222.186c-.093-.186 0-.653.327-.746l.84-.233V9.854L7.822 9.76c-.094-.42.14-1.026.793-1.073l3.456-.233 4.764 7.279v-6.44l-1.215-.14c-.093-.514.28-.886.747-.933zM1.936 1.035l13.31-.98c1.634-.14 2.055-.047 3.082.7l4.249 2.986c.7.513.934.653.934 1.213v16.378c0 1.026-.373 1.634-1.68 1.726l-15.458.934c-.98.046-1.448-.093-1.962-.747l-3.129-4.06c-.56-.747-.793-1.306-.793-1.96V2.667c0-.839.374-1.54 1.447-1.632z" />
+      </svg>
+    ),
+  },
+  {
+    name: "Google Calendar",
+    color: "#4285F4",
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-6 h-6" fill="currentColor">
+        <path d="M18.316 5.684H24v12.632h-5.684V5.684zM5.684 24h12.632v-5.684H5.684V24zM18.316 5.684V0H5.684v5.684h12.632zM5.684 18.316H0V5.684h5.684v12.632zM12 15.5c-1.933 0-3.5-1.567-3.5-3.5s1.567-3.5 3.5-3.5 3.5 1.567 3.5 3.5-1.567 3.5-3.5 3.5z" />
+      </svg>
+    ),
+  },
+  {
+    name: "GitHub",
+    color: "#333333",
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-6 h-6" fill="currentColor">
+        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+      </svg>
+    ),
+  },
+  {
+    name: "Google Drive",
+    color: "#0F9D58",
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-6 h-6" fill="currentColor">
+        <path d="M7.71 0L0 12.462l3.855 6.676h15.123L24 12.462 16.29 0H7.71zm6.422 13.538H6.923l3.855-6.676h7.21l-3.856 6.676z" />
+      </svg>
+    ),
+  },
+  {
+    name: "Zoom",
+    color: "#2D8CFF",
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-6 h-6" fill="currentColor">
+        <path d="M24 12c0 6.627-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0s12 5.373 12 12zm-6.263-1.2l-3.204 2.235V9.6a1.2 1.2 0 0 0-1.2-1.2H6.267a1.2 1.2 0 0 0-1.2 1.2v4.8a1.2 1.2 0 0 0 1.2 1.2h7.066a1.2 1.2 0 0 0 1.2-1.2v-3.435l3.204 2.235a.4.4 0 0 0 .63-.326V11.126a.4.4 0 0 0-.63-.326z" />
+      </svg>
+    ),
+  },
+  {
+    name: "HubSpot",
+    color: "#FF7A59",
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-6 h-6" fill="currentColor">
+        <path d="M18.164 7.93V5.084a2.198 2.198 0 0 0 1.267-1.984v-.066A2.2 2.2 0 0 0 17.23.836h-.066a2.2 2.2 0 0 0-2.198 2.198v.066c0 .87.517 1.618 1.26 1.963v2.868a6.26 6.26 0 0 0-2.88 1.387l-7.636-5.942a2.612 2.612 0 0 0 .076-.61 2.634 2.634 0 1 0-2.633 2.633c.479 0 .923-.135 1.308-.362l7.5 5.836a6.26 6.26 0 0 0-.372 2.114c0 .781.147 1.527.404 2.217l-2.33 1.328a2.198 2.198 0 0 0-4.063 1.162 2.198 2.198 0 1 0 4.396 0c0-.152-.02-.299-.05-.442l2.251-1.283a6.283 6.283 0 1 0 5.727-9.042z" />
+      </svg>
+    ),
+  },
+  {
+    name: "Jira",
+    color: "#0052CC",
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-6 h-6" fill="currentColor">
+        <path d="M11.571 11.513H0a5.218 5.218 0 0 0 5.232 5.215h2.13v2.057A5.215 5.215 0 0 0 12.575 24V12.518a1.005 1.005 0 0 0-1.005-1.005zm5.723-5.756H5.736a5.215 5.215 0 0 0 5.215 5.214h2.129v2.058a5.218 5.218 0 0 0 5.215 5.214V6.758a1.001 1.001 0 0 0-1.001-1.001zM23.013 0H11.455a5.215 5.215 0 0 0 5.215 5.215h2.129v2.057A5.215 5.215 0 0 0 24.013 12.5V1.005A1.005 1.005 0 0 0 23.013 0z" />
+      </svg>
+    ),
+  },
+  {
+    name: "Salesforce",
+    color: "#00A1E0",
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
+        <path d="M10.005 4.539a4.34 4.34 0 0 1 3.777-2.213 4.363 4.363 0 0 1 4.063 2.745 5.42 5.42 0 0 1 2.19-.462C22.28 4.609 24 6.37 24 8.566c0 2.196-1.72 3.957-3.965 3.957-.254 0-.502-.026-.744-.072a3.4 3.4 0 0 1-3.042 1.874 3.4 3.4 0 0 1-1.263-.243 4.094 4.094 0 0 1-3.851 2.71 4.1 4.1 0 0 1-3.522-2.006 3.733 3.733 0 0 1-1.322.243c-1.695 0-3.134-1.133-3.598-2.68A3.14 3.14 0 0 1 0 9.369a3.14 3.14 0 0 1 2.036-2.935A3.722 3.722 0 0 1 5.32 3.506a3.73 3.73 0 0 1 2.372.86A4.345 4.345 0 0 1 10.005 4.539z" />
+      </svg>
+    ),
+  },
 ];
 
 export function Integrations() {
@@ -21,19 +98,31 @@ export function Integrations() {
         <p className="text-sm font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-8">
           Connects to your existing tools
         </p>
-        <div className="flex justify-center items-center flex-wrap">
-          {platforms.map((platform, i) => (
+        <div className="flex justify-center items-center flex-wrap gap-4 sm:gap-6">
+          {platforms.map((platform) => (
             <div
               key={platform.name}
-              className="w-12 h-12 rounded-full border-2 border-white dark:border-slate-900 shadow-md flex items-center justify-center text-white text-xs font-bold -ml-2 first:ml-0 hover:scale-110 transition-transform"
-              style={{ backgroundColor: platform.color, zIndex: platforms.length - i }}
+              className="group flex flex-col items-center gap-2"
               title={platform.name}
             >
-              {platform.name.slice(0, 2)}
+              <div
+                className="w-14 h-14 rounded-2xl flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform"
+                style={{ backgroundColor: platform.color }}
+              >
+                {platform.icon}
+              </div>
+              <span className="text-xs text-slate-500 dark:text-slate-400 font-medium hidden sm:block">
+                {platform.name.length > 10 ? platform.name.split(" ")[0] : platform.name}
+              </span>
             </div>
           ))}
-          <div className="w-12 h-12 rounded-full border-2 border-white dark:border-slate-900 shadow-md flex items-center justify-center bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-bold -ml-2">
-            +10K
+          <div className="flex flex-col items-center gap-2">
+            <div className="w-14 h-14 rounded-2xl flex items-center justify-center bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-sm font-bold shadow-lg">
+              +10K
+            </div>
+            <span className="text-xs text-slate-500 dark:text-slate-400 font-medium hidden sm:block">
+              More
+            </span>
           </div>
         </div>
       </div>
