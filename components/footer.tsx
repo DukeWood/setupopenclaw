@@ -8,9 +8,9 @@ export function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-8">
           <div>
             <img
-              src="/logo.png"
+              src="/logo-setupopenclaw.png"
               alt="SetupOpenClaw"
-              className="h-10 w-auto"
+              className="h-9 w-auto brightness-0 invert"
             />
             <p className="text-sm text-slate-400 mt-1">
               A service by Innovatorly.ai

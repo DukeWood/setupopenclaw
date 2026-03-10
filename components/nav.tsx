@@ -37,26 +37,15 @@ export function Nav() {
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            {/* White logo for dark backgrounds: unscrolled hero + scrolled dark mode */}
+          {/* Logo — single file, invert for dark backgrounds */}
+          <a href="#" className="flex items-center">
             <img
-              src="/logo.png"
+              src="/logo-setupopenclaw.png"
               alt="SetupOpenClaw — Managed AI Assistant Deployment"
-              className={`h-10 w-auto ${
+              className={`h-8 sm:h-9 w-auto transition-all ${
                 scrolled
-                  ? "hidden dark:block"
-                  : "block"
-              }`}
-            />
-            {/* Dark logo for scrolled light mode */}
-            <img
-              src="/logo-dark.png"
-              alt="SetupOpenClaw — Managed AI Assistant Deployment"
-              className={`h-10 w-auto ${
-                scrolled
-                  ? "block dark:hidden"
-                  : "hidden"
+                  ? "dark:brightness-0 dark:invert"
+                  : "brightness-0 invert"
               }`}
             />
           </a>
