@@ -39,26 +39,26 @@ export function Nav() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            {/* PNG logo for dark backgrounds: unscrolled hero + dark mode */}
+            {/* White logo for dark backgrounds: unscrolled hero + scrolled dark mode */}
             <img
               src="/logo.png"
               alt="SetupOpenClaw — Managed AI Assistant Deployment"
-              className={`h-10 w-auto transition-opacity ${
+              className={`h-10 w-auto ${
                 scrolled
                   ? "hidden dark:block"
                   : "block"
               }`}
             />
-            {/* Text logo for scrolled light mode (white bg makes PNG text invisible) */}
-            <span
-              className={`text-xl font-bold transition-colors ${
+            {/* Dark logo for scrolled light mode */}
+            <img
+              src="/logo-dark.png"
+              alt="SetupOpenClaw — Managed AI Assistant Deployment"
+              className={`h-10 w-auto ${
                 scrolled
-                  ? "text-slate-900 dark:hidden"
+                  ? "block dark:hidden"
                   : "hidden"
               }`}
-            >
-              Setup<span className="text-gradient-brand">OpenClaw</span>
-            </span>
+            />
           </a>
 
           {/* Desktop Nav */}
