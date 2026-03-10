@@ -43,8 +43,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/favicon.jpeg",
-    apple: "/favicon.jpeg",
+    icon: "/favicon.png",
+    apple: "/favicon.png",
   },
   other: {
     "geo.region": "GB",
