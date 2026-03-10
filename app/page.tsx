@@ -20,19 +20,32 @@ export default function Home() {
     <main>
       <Nav />
       <Hero />
-      <Integrations />
-      <BuiltFor />
-      <AlwaysOn />
-      <WhatIsAgent />
-      <HowItWorks />
-      <Testimonials />
-      <WhyHireUs />
-      <Security />
-      <Pricing />
-      <Guarantees />
-      <AfterPurchase />
-      <FAQ />
-      <Cities />
+
+      <article aria-label="Service overview">
+        <Integrations />
+        <BuiltFor />
+        <AlwaysOn />
+        <WhatIsAgent />
+        <HowItWorks />
+      </article>
+
+      <section aria-label="Social proof">
+        <Testimonials />
+        <WhyHireUs />
+      </section>
+
+      <section aria-label="Security and pricing">
+        <Security />
+        <Pricing />
+        <Guarantees />
+      </section>
+
+      <section aria-label="After you buy">
+        <AfterPurchase />
+        <FAQ />
+        <Cities />
+      </section>
+
       <Footer />
     </main>
   );

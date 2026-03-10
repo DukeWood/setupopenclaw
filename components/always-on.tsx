@@ -29,7 +29,7 @@ const intervals = [
 
 export function AlwaysOn() {
   return (
-    <section className="py-20 bg-white dark:bg-slate-950">
+    <section id="always-on" className="py-20 bg-white dark:bg-slate-950">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl lg:text-4xl font-bold text-center text-slate-900 dark:text-white mb-4">
           Always on, <span className="text-gradient-brand">always working</span>

@@ -2,7 +2,7 @@ import { ShieldCheck } from "lucide-react";
 
 export function Guarantees() {
   return (
-    <section className="py-16 bg-slate-50 dark:bg-slate-900">
+    <section id="guarantees" className="py-16 bg-slate-50 dark:bg-slate-900">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 shadow-lg text-center max-w-2xl mx-auto">
           <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-navy-500 to-emerald-500 flex items-center justify-center mx-auto mb-4">

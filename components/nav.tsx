@@ -39,15 +39,13 @@ export function Nav() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <span
-              className={`text-xl font-bold ${
-                scrolled
-                  ? "text-slate-900 dark:text-white"
-                  : "text-white"
+            <img
+              src="/logo.jpeg"
+              alt="SetupOpenClaw — Managed AI Assistant Deployment"
+              className={`h-10 w-auto transition-all ${
+                scrolled ? "" : "brightness-0 invert"
               }`}
-            >
-              Setup<span className="text-gradient-brand">OpenClaw</span>
-            </span>
+            />
           </a>
 
           {/* Desktop Nav */}

@@ -1,12 +1,12 @@
 import { MapPin } from "lucide-react";
 
 const cities = [
-  { name: "London", type: "In-Person + Remote" },
+  { name: "Leeds", type: "In-Person + Remote" },
   { name: "Manchester", type: "Remote" },
   { name: "Birmingham", type: "Remote" },
   { name: "Edinburgh", type: "Remote" },
   { name: "Bristol", type: "Remote" },
-  { name: "Leeds", type: "Remote" },
+  { name: "London", type: "Remote" },
   { name: "Glasgow", type: "Remote" },
   { name: "Cambridge", type: "Remote" },
   { name: "Oxford", type: "Remote" },
@@ -15,13 +15,16 @@ const cities = [
 
 export function Cities() {
   return (
-    <section className="py-20 bg-white dark:bg-slate-950">
+    <section id="coverage" className="py-20 bg-white dark:bg-slate-950">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl lg:text-4xl font-bold text-center text-slate-900 dark:text-white mb-4">
           Available <span className="text-gradient-brand">across the UK</span>
         </h2>
         <p className="text-center text-slate-600 dark:text-slate-400 mb-12 max-w-2xl mx-auto">
-          Remote setup anywhere. In-person available in London.
+          Remote setup anywhere. In-person available in Leeds & West Yorkshire.
+        </p>
+        <p className="text-center text-sm text-slate-500 dark:text-slate-500 mb-8 max-w-3xl mx-auto">
+          SetupOpenClaw provides AI assistant deployment services across the UK, including London, Manchester, Birmingham, Leeds, Edinburgh, Glasgow, Bristol, Cambridge, Oxford, and Cardiff. Remote deployment is available nationwide for businesses of all sizes.
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
           {cities.map((city) => (

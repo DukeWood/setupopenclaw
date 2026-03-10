@@ -25,7 +25,7 @@ const personas = [
 
 export function BuiltFor() {
   return (
-    <section className="py-20 bg-slate-50 dark:bg-slate-900">
+    <section id="built-for" className="py-20 bg-slate-50 dark:bg-slate-900">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl lg:text-4xl font-bold text-center text-slate-900 dark:text-white mb-4">
           Built for <span className="text-gradient-brand">ambitious teams</span>

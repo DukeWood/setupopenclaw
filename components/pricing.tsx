@@ -35,14 +35,14 @@ const tiers = [
   {
     name: "Mac Mini In-Person",
     price: "2,200",
-    description: "London area, on-site installation",
+    description: "Leeds & West Yorkshire, on-site installation",
     featured: false,
     features: [
       "Everything in Mac Mini Remote",
       "On-site installation",
       "In-person kickoff & training",
       "Hardware setup at your office",
-      "London & surrounding areas",
+      "Leeds & West Yorkshire",
       "14-day hypercare",
     ],
   },

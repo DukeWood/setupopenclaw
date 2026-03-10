@@ -1,0 +1,16 @@
+{
+  "name": "SetupOpenClaw",
+  "short_name": "SetupOpenClaw",
+  "description": "Managed AI Assistant Deployment for UK Teams",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/favicon.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}

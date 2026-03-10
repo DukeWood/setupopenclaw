@@ -46,6 +46,10 @@ export function Hero() {
               <span className="text-gradient-brand">AI assistant</span>
             </h1>
 
+            <p className="sr-only">
+              SetupOpenClaw is a managed deployment service for OpenClaw, the open-source AI executive assistant, purpose-built for UK businesses with 4–50 employees. Provided by Innovatorly Ltd, we handle security-first installation, configuration, and 14-day hypercare so your team is productive from day one.
+            </p>
+
             <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-lg">
               White-glove OpenClaw deployment for UK teams of 4-50.
               Remotely, securely, from day one.

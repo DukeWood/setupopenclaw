@@ -4,6 +4,7 @@ import { JsonLd } from "@/components/json-ld";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://setupclaw.uk"),
   title: "SetupOpenClaw — Managed AI Assistant Deployment for UK Teams",
   description:
     "We deploy and maintain your team's OpenClaw AI assistant. Secured from day one, available across the UK. From £770.",
@@ -15,12 +16,39 @@ export const metadata: Metadata = {
     "executive agent",
     "business AI",
   ],
+  alternates: {
+    canonical: "https://setupclaw.uk",
+  },
   openGraph: {
     title: "SetupOpenClaw — Managed AI Assistant Deployment for UK Teams",
     description:
       "We deploy and maintain your team's OpenClaw AI assistant. Secured from day one, available across the UK.",
     type: "website",
     locale: "en_GB",
+    url: "https://setupclaw.uk",
+    siteName: "SetupOpenClaw",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SetupOpenClaw — Managed AI Assistant Deployment for UK Teams",
+    description:
+      "We deploy and maintain your team's OpenClaw AI assistant. Secured from day one, available across the UK. From £770.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  icons: {
+    icon: "/favicon.jpeg",
+    apple: "/favicon.jpeg",
+  },
+  other: {
+    "geo.region": "GB",
+    "geo.placename": "United Kingdom",
   },
 };
 
@@ -30,7 +58,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en-GB" suppressHydrationWarning>
       <body className="bg-white text-slate-900 dark:bg-slate-950 dark:text-white antialiased">
         <ThemeProvider
           attribute="class"

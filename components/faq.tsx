@@ -19,7 +19,7 @@ const faqs = [
   {
     question: "Can you set this up remotely?",
     answer:
-      "Yes. Our Hosted Setup and Mac Mini Remote tiers are fully remote. We can deploy for teams anywhere in the UK (and worldwide). Only the Mac Mini In-Person tier requires London proximity.",
+      "Yes. Our Hosted Setup and Mac Mini Remote tiers are fully remote. We can deploy for teams anywhere in the UK (and worldwide). Only the Mac Mini In-Person tier requires Leeds & West Yorkshire proximity.",
   },
   {
     question: "Is this related to the OpenAI acquisition?",
