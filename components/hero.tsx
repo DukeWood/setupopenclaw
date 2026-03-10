@@ -12,16 +12,16 @@ const stats = [
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-slate-950">
-      {/* Gradient orbs */}
+    <section className="relative overflow-hidden bg-slate-950">
+      {/* Gradient orbs — boosted opacity for visibility */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -left-40 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-navy-500/10 to-navy-600/5 blur-3xl animate-float" />
+        <div className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full bg-gradient-to-br from-navy-500/20 to-navy-600/10 blur-3xl animate-float" />
         <div
-          className="absolute top-1/3 -right-20 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-emerald-500/10 to-emerald-600/5 blur-3xl animate-float"
+          className="absolute top-1/3 -right-20 w-[600px] h-[600px] rounded-full bg-gradient-to-br from-emerald-500/20 to-emerald-600/10 blur-3xl animate-float"
           style={{ animationDelay: "1.5s" }}
         />
         <div
-          className="absolute -bottom-40 left-1/3 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-amber-500/5 to-amber-600/5 blur-3xl animate-float"
+          className="absolute -bottom-40 left-1/3 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-amber-500/10 to-amber-600/5 blur-3xl animate-float"
           style={{ animationDelay: "3s" }}
         />
       </div>
@@ -29,7 +29,7 @@ export function Hero() {
       {/* Grid overlay */}
       <div className="absolute inset-0 grid-overlay opacity-50" />
 
-      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left: Content */}
           <div className="animate-fade-in-up">
