@@ -4,7 +4,7 @@ import { JsonLd } from "@/components/json-ld";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://setupclaw.uk"),
+  metadataBase: new URL("https://setupopenclaw.pro"),
   title: "SetupOpenClaw — Managed AI Assistant Deployment for UK Teams",
   description:
     "We deploy and maintain your team's OpenClaw AI assistant. Secured from day one, available across the UK. From £770.",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "business AI",
   ],
   alternates: {
-    canonical: "https://setupclaw.uk",
+    canonical: "https://setupopenclaw.pro",
   },
   openGraph: {
     title: "SetupOpenClaw — Managed AI Assistant Deployment for UK Teams",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
       "We deploy and maintain your team's OpenClaw AI assistant. Secured from day one, available across the UK.",
     type: "website",
     locale: "en_GB",
-    url: "https://setupclaw.uk",
+    url: "https://setupopenclaw.pro",
     siteName: "SetupOpenClaw",
   },
   twitter: {

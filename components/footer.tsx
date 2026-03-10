@@ -39,8 +39,8 @@ export function Footer() {
             <a href="#" className="hover:text-white transition-colors">
               Privacy Policy
             </a>
-            <a href="https://setupclaw.uk" className="hover:text-white transition-colors">
-              setupclaw.uk
+            <a href="https://setupopenclaw.pro" className="hover:text-white transition-colors">
+              setupopenclaw.pro
             </a>
           </div>
           <a

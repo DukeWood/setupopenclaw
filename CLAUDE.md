@@ -6,6 +6,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 SetupOpenClaw is a UK-focused landing page for managed OpenClaw AI assistant deployment services. It's a single-page static marketing site under the Innovatorly.ai / TorlyAI brand family, targeting UK businesses (4-50 employees).
 
+- **Domain:** setupopenclaw.pro
+- **Hosting:** Vercel (dukewoods-projects), DNS on DreamHost
+- **Repo:** github.com/DukeWood/setupopenclaw
+
 ## Commands
 
 ```bash

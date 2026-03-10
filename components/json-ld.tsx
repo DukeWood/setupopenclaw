@@ -8,23 +8,23 @@ const structuredData = {
       url: "https://innovatorly.ai",
       subOrganization: {
         "@type": "Organization",
-        "@id": "https://setupclaw.uk/#brand",
+        "@id": "https://setupopenclaw.pro/#brand",
         name: "SetupOpenClaw",
-        url: "https://setupclaw.uk",
+        url: "https://setupopenclaw.pro",
       },
     },
     {
       "@type": "WebSite",
-      "@id": "https://setupclaw.uk/#website",
+      "@id": "https://setupopenclaw.pro/#website",
       name: "SetupOpenClaw",
-      url: "https://setupclaw.uk",
+      url: "https://setupopenclaw.pro",
       publisher: {
         "@id": "https://innovatorly.ai/#organization",
       },
     },
     {
       "@type": "Service",
-      "@id": "https://setupclaw.uk/#service",
+      "@id": "https://setupopenclaw.pro/#service",
       name: "SetupOpenClaw",
       description:
         "Managed OpenClaw AI assistant deployment for UK teams. We handle installation, security hardening, integration configuration, and ongoing support so your team can focus on work.",
@@ -81,7 +81,7 @@ const structuredData = {
     },
     {
       "@type": "FAQPage",
-      "@id": "https://setupclaw.uk/#faq",
+      "@id": "https://setupopenclaw.pro/#faq",
       mainEntity: [
         {
           "@type": "Question",
@@ -167,13 +167,13 @@ const structuredData = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://setupclaw.uk/#breadcrumb",
+      "@id": "https://setupopenclaw.pro/#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://setupclaw.uk",
+          item: "https://setupopenclaw.pro",
         },
         {
           "@type": "ListItem",

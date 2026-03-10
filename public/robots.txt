@@ -1,4 +1,4 @@
-# SetupOpenClaw — setupclaw.uk
+# SetupOpenClaw — setupopenclaw.pro
 # Allow all crawlers including AI bots
 
 User-agent: *
@@ -28,4 +28,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://setupclaw.uk/sitemap.xml
+Sitemap: https://setupopenclaw.pro/sitemap.xml
