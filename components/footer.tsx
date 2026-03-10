@@ -86,13 +86,18 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://www.hetzner.com/cloud" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-400 hover:text-white transition-colors">
-                  Hetzner VPS
+                <a href="https://aws.amazon.com/lightsail/" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-400 hover:text-white transition-colors">
+                  AWS Lightsail
                 </a>
               </li>
               <li>
                 <a href="https://www.digitalocean.com" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-400 hover:text-white transition-colors">
                   DigitalOcean
+                </a>
+              </li>
+              <li>
+                <a href="https://www.hetzner.com/cloud" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-400 hover:text-white transition-colors">
+                  Hetzner Cloud
                 </a>
               </li>
             </ul>

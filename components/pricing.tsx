@@ -1,4 +1,4 @@
-import { CheckCircle, Star } from "lucide-react";
+import { CheckCircle, Info, Star } from "lucide-react";
 
 const BOOKING_URL =
   "https://calendar.google.com/calendar/appointments/schedules/AcZssZ1hWsbiKMNo85CRLg7CHmXAyEGRED-9afeuweInuT68RlCdzJLEAktwlfGdteGwySAPyw5oGMY6?gv=true";
@@ -29,8 +29,8 @@ const tiers = [
       "Mac Mini configuration",
       "Remote setup & deployment",
       "14-day hypercare",
-      "Hardware ~£500 (yours to keep)",
     ],
+    hardwareNote: "Mac Mini (~£500) purchased separately by you",
   },
   {
     name: "Mac Mini In-Person",
@@ -45,6 +45,7 @@ const tiers = [
       "Leeds & West Yorkshire",
       "14-day hypercare",
     ],
+    hardwareNote: "Mac Mini (~£500) purchased separately by you",
   },
 ];
 
@@ -99,6 +100,12 @@ export function Pricing() {
                     {feature}
                   </li>
                 ))}
+                {"hardwareNote" in tier && tier.hardwareNote && (
+                  <li className="flex items-start gap-2 text-sm text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/30 rounded-lg px-2 py-1.5 -mx-2">
+                    <Info className="w-4 h-4 shrink-0 mt-0.5" />
+                    {tier.hardwareNote}
+                  </li>
+                )}
               </ul>
               <a
                 href={BOOKING_URL}
@@ -117,7 +124,8 @@ export function Pricing() {
         </div>
         <p className="text-center text-sm text-slate-500 dark:text-slate-400 mt-8">
           Need more agents? <strong>+£350 per additional agent.</strong> All
-          prices exclude VAT.
+          prices exclude VAT. Mac Mini tiers require you to purchase hardware
+          separately (~£500).
         </p>
       </div>
     </section>
